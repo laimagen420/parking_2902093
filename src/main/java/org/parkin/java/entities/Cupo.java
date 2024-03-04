@@ -1,19 +1,32 @@
 package org.parkin.java.entities;
 
 public class Cupo {
-    public char nombre;
+    private char nombre;
 
     
 
 
 //constructor por defecto
-public Cupo() {
+private Cupo() {
     }
 
 
 
 // constructor parametrizado
-public Cupo(char nombre) {
+private Cupo(char nombre) {
+    this.nombre = nombre;
+}
+//getters y setters
+
+
+
+public char getNombre() {
+    return nombre;
+}
+
+
+
+public void setNombre(char nombre) {
     this.nombre = nombre;
 }
 
